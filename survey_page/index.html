@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Survey Form</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1 id="title" class="text-center">Oh My Gig! Survey Form</h1>
+                <p id="description" class="description text-center">
+                    Thank you for taking the time to help us improve our platform
+                </p>
+            </header>   
+            <form id="survey-form">
+                <div class="form-group">
+                    <label id="name-label" for="name">Name</label>
+                    <input
+                        id="name"
+                        type="text"
+                        name="name"
+                        class="form-control"
+                        placeholder="Enter your name"
+                        required
+                    />
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="email">Email</label>
+                    <input
+                        id="email"
+                        type="email"
+                        name="email"
+                        class="form-control"
+                        placeholder="Enter your Email"
+                        required
+                    />
+                </div>
+                <div class="form-group">
+                        <label id="number-label" for="number"
+                            >Age<span class="clue">(optional)</span></label
+                        >
+                        <input
+                            id="number"
+                            type="number"
+                            name=""
+                            value=""
+                            min="13"
+                            max="120"
+                            class="form-control" 
+                            placeholder="Age"
+                        />
+                </div>
+                <div class="form-group">
+                    <p>Which option best decribes your current role?</p>
+                    <select id="dropdown" name="role" class="form-control" required>
+                        <option disabled selected value>Select current role</option>
+                        <option value="">Student</option>
+                        <option value="">Full Time Job</option>
+                        <option value="">Full Time Learner</option>
+                        <option value="">Prefer not to say</option>
+                        <option value="">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>Would you recommend Oh My Gig! to a friend?</p>
+                    <label>
+                    <input
+                        type="radio"
+                        name="user-recommend"
+                        value="definitely"
+                        class="input-radio"
+                        checked
+                    />Definitely</label
+                    >
+                    <label>
+                    <input 
+                        type="radio"
+                        name="user-recommend"
+                        value="maybe"
+                        class="input-radio"
+                    />Maybe</label
+                    >
+                    <label>
+                    <input 
+                        type="radio"
+                        name="user-recommend"
+                        value="not-sure"
+                        class="input-radio"
+                    />Not sure</label
+                    >
+                </div>
+                <div class="form-group">
+                    <p>What is your favorite feature of Oh My Gig!?</p> 
+                    <select id="most-like" name="mostLike" class="form-control" required>
+                       <option disabled selected value>Select an option</option> 
+                       <option value="user-interface">Challenges</option> 
+                       <option value="ease-of-access">Ease Of Access</option> 
+                       <option value="documentation">Documentation</option> 
+                       <option value="configurability">Configurability</option> 
+                    </select>
+                </div>        
+                <div class="form-group">
+                    <p>
+                        What would you like to see improved?
+                        <span class="clue">(Check all that apply)</span>
+                    </p>
+                    <label>
+                    <input 
+                        type="checkbox"
+                        name="prefer"
+                        value="ui" 
+                        class="input-checkbox"
+                    />UI</label
+                    >
+                    <label>
+                    <input 
+                        type="checkbox"
+                        name="prefer"
+                        value="stability" 
+                        class="input-checkbox"
+                    />Stability</label
+                    >
+                    <label>
+                    <input 
+                        type="checkbox"
+                        name="prefer"
+                        value="instructions" 
+                        class="input-checkbox"
+                    />Instructions</label
+                    >
+                    <label>
+                    <input 
+                        type="checkbox"
+                        name="prefer"
+                        value="documentation" 
+                        class="input-checkbox"
+                    />Documentation</label
+                    >
+                    <label>
+                    <input 
+                        type="checkbox"
+                        name="prefer"
+                        value="speed" 
+                        class="input-checkbox"
+                    />Speed</label
+                    >
+                    <label>
+                    <input 
+                        type="checkbox"
+                        name="prefer"
+                        value="menu-options" 
+                        class="input-checkbox"
+                    />Menu Options</label
+                    >
+                    <label>
+                    <input 
+                        type="checkbox"
+                        name="prefer"
+                        value="resources" 
+                        class="input-checkbox"
+                    />Resources</label
+                    >
+                    <label>
+                    <input 
+                        type="checkbox"
+                        name="prefer"
+                        value="other" 
+                        class="input-checkbox"
+                    />Other</label
+                    >
+                </div>
+                <div class="form-group">
+                    <p>Any comments or suggestions?</p>
+                    <textarea
+                        id="comments"
+                        class="input-textarea"
+                        name="comment"
+                        placeholder="Enter your comment here..."
+                    ></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
+
